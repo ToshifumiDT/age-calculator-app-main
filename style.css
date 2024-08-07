@@ -1,0 +1,134 @@
+:root {
+    --purple: hsl(259, 100%, 65%);
+    --light-red: hsl(0, 100%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --off-white: hsl(0, 0%, 94%);
+    --light-grey: hsl(0, 0%, 86%);
+    --smokey-grey: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--off-white);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: var(--white);
+    width: 700px;
+    border-radius: 5px 5px 40% 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_container {
+    display: flex;
+    gap: 2rem;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+}
+
+.block label {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+input {
+    width: 150px;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--smokey-grey);
+    display: flex;
+    align-items: center;
+}
+
+input::placeholder {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+input:focus, .submit_btn:focus {
+    outline: 2px solid var(--purple);
+    outline-offset: 2px;
+}
+
+.submit_block {
+    display: flex;
+    align-items: center;
+}
+
+.submit_block hr {
+    width: 100%;
+    background-color: var(--off-white);
+    border: none;
+    height: 1px;
+}
+
+.submit_block .submit_btn {
+    border-radius: 50%;
+    padding: 1rem;
+    background-color: var(--purple);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit_block .submit_btn:hover {
+    background-color: hsl(259, 100%, 70%);
+}
+
+.output h1 {
+    font-size: 5rem;
+    font-weight: 800;
+    font-style: italic;
+    height: fit-content;
+}
+
+.output span {
+    color: var(--purple);
+}
+
+small {
+    color: red;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
